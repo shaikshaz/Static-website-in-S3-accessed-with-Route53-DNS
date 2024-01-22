@@ -13,10 +13,11 @@ To host the static website on S3 first we need to create a S3 bucket on console 
 ROUTE 53 configuration:
 -The main purpose of rout53 is to provide DNS access to our static website to display the output page.
 -Create a hosted zone create a name server like shazia.com and update the name server.
--Add a record set give a alias name and choose the bucket created as target so that when we run the DNS it should do to our S3 bucket content.
+-Add a record set give an alias name and choose the bucket created as target so that when we run the DNS it should do to our S3 bucket content.
 -In the backend the DNS gets registered and takes few minutes to update with our S3 bucker content.
 -Once the resolution is done we can access out website with custom domain name .
 
 RESULT: Static website is successfully hosted on Amazon S3, and its domain is routed through Amazon Route 53 for DNS management. We can now access our website using custom domain name.
+
 
 
